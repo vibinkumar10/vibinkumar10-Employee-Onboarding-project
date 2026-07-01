@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-    baseURL: 'https://vibinkumar10-employee-onboarding.onrender.com'
+    baseURL: 'https://vibinkumar10-employee-onboarding.onrender.com/api'
 })
 API.interceptors.request.use((config) => {
     const token = localStorage.getItem('token')
