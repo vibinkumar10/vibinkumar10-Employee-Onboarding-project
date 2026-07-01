@@ -34,7 +34,7 @@ const UploadDocument = () => {
 
             alert("Document uploaded successfully.");
 
-            navigate("/employee/documents");
+            navigate("/api/employee/documents");
         } catch (err) {
             console.error(err);
             alert(

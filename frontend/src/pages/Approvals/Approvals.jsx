@@ -22,7 +22,7 @@ export default function Approvals() {
 
     const approveEmployee = async (id) => {
         try {
-            const res = await API.patch(`/employees/${id}/approve`);
+            const res = await API.patch(`/api/employees/${id}/approve`);
 
             alert(
                 `Employee Approved`
@@ -34,7 +34,7 @@ export default function Approvals() {
     }
     const rejectEmployee = async (id) => {
         try {
-            await API.patch(`/employees/${id}/reject`);
+            await API.patch(`/api/employees/${id}/reject`);
             fetchPendingEmployees();
         } catch (err) {
             console.log(err);

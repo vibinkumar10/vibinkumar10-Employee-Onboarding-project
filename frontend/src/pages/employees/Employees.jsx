@@ -19,7 +19,7 @@ export default function Employees() {
 
     const getEmployees = async () => {
         try {
-            const res = await API.get("/employees");
+            const res = await API.get("/api/employees");
             setEmployees(res.data.data);
         } catch (err) {
             console.log(err);
@@ -30,7 +30,7 @@ export default function Employees() {
 
         if (!window.confirm("Delete this employee?")) return;
         try {
-            await API.delete(`/employees/${id}`);
+            await API.delete(`/api/employees/${id}`);
             getEmployees();
         } catch (err) {
             console.log(err);

@@ -67,7 +67,7 @@ export default function EditEmployee() {
 
         try {
 
-            await API.put(`/employees/${id}`, employee);
+            await API.put(`/api/employees/${id}`, employee);
 
             alert("Employee Updated Successfully");
 
