@@ -6,16 +6,16 @@ export const uploadDocument = async (formData) => {
 };
 
 export const getDocuments = async () => {
-    const response = await api.get("/api/documents");
+    const response = await api.get("/documents");
     return response.data;
 };
 
 export const deleteDocument = async (id) => {
-    const response = await api.delete(`/api/documents/${id}`);
+    const response = await api.delete(`/documents/${id}`);
     return response.data;
 };
 
 export const getAllDocuments = async () => {
-    const response = await api.get("/api/documents/admin");
+    const response = await api.get("/documents/admin");
     return response.data;
 };
