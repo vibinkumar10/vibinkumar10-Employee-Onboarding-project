@@ -19,7 +19,7 @@ export default function Employees() {
 
     const getEmployees = async () => {
         try {
-            const res = await API.get("/api/employees");
+            const res = await API.get("/employees");
             setEmployees(res.data.data);
         } catch (err) {
             console.log(err);

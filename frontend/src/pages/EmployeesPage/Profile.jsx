@@ -17,7 +17,7 @@ export default function Profile() {
 
         try {
 
-            const res = await API.get("/api/employees/profile/me");
+            const res = await API.get("/employees/profile/me");
 
             setEmployee(res.data.data);
 

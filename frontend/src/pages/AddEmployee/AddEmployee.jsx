@@ -29,7 +29,7 @@ export default function AddEmployee() {
         e.preventDefault();
 
         try {
-            await API.post("/api/employees", employee);
+            await API.post("/employees", employee);
             alert("Employee Added Successfully");
             navigate("/employees");
         } catch (err) {

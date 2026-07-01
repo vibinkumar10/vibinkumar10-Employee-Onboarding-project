@@ -26,7 +26,7 @@ export default function Dashboard() {
 
     const getEmployees = async () => {
         try {
-            const res = await API.get("/api/employees");
+            const res = await API.get("/employees");
 
             console.log(res.data);
 

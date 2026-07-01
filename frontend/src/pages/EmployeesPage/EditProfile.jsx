@@ -23,7 +23,7 @@ export default function EditProfile() {
 
     const loadProfile = async()=>{
 
-        const res = await API.get("/api/employees/profile/me");
+        const res = await API.get("/employees/profile/me");
 
         setForm({
 
