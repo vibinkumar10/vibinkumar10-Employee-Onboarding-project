@@ -1,0 +1,44 @@
+.edit-page{
+
+    padding:40px;
+
+}
+
+.edit-card{
+
+    width:500px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.edit-card input{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+.edit-card button{
+    padding:12px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}

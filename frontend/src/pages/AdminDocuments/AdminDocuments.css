@@ -1,0 +1,96 @@
+.admin-documents-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-documents-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.admin-documents-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-documents-table thead {
+    background: #1976d2;
+    color: #fff;
+}
+
+.admin-documents-table th,
+.admin-documents-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-documents-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.admin-documents-table a {
+    color: #1976d2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.admin-documents-table a:hover {
+    text-decoration: underline;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #b52b38;
+}
+
+.empty-message {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+    font-size: 18px;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .admin-documents-container {
+        width: 95%;
+    }
+
+    .admin-documents-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .admin-documents-table th,
+    .admin-documents-table td {
+        padding: 10px;
+    }
+
+    .delete-btn {
+        padding: 6px 12px;
+    }
+}

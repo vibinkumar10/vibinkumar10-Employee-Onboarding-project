@@ -1,0 +1,29 @@
+.edit-container{
+    width:700px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+}
+
+.edit-container h1{
+    margin-bottom:25px;
+}
+
+.edit-container input{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+
+}
+
+.edit-container button{
+    grid-column:span 2;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    cursor:pointer;
+}
