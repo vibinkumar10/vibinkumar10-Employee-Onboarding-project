@@ -91,7 +91,7 @@ const UploadDocument = () => {
                         <button
                             type="button"
                             className="cancel-btn"
-                            onClick={() => navigate("/employee-documents")}
+                            onClick={() => navigate("/employee/documents")}
                         >
                             Cancel
                         </button>
