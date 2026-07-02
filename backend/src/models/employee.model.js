@@ -24,7 +24,7 @@ const employeeSchema = new mongoose.Schema({
         lowercase: true
     },
     phone: {
-        type: String,
+        type: Number,
         required: true
     },
     title: {
