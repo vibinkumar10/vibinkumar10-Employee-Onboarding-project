@@ -30,7 +30,7 @@ export default function Employees() {
 
         if (!window.confirm("Delete this employee?")) return;
         try {
-            await API.delete(`/api/employees/${id}`);
+            await API.delete(`/employees/${id}`);
             getEmployees();
         } catch (err) {
             console.log(err);
