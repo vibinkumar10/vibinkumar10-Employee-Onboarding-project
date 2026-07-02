@@ -48,15 +48,10 @@ export default function EditProfile() {
     };
 
     const handleSubmit = async (e) => {
-
         e.preventDefault();
-
         await API.put("/employees/profile/me", form);
-
         alert("Profile Updated");
-
         navigate("/employee/profile");
-
     };
 
     return (
